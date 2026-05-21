@@ -1,4 +1,6 @@
 import { FaGithub, FaHeart, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { FaYoutube } from "react-icons/fa";
 export function Footer() {
   return (
     <footer className="border-t border-border bg-card/50 py-12">
@@ -36,10 +38,28 @@ export function Footer() {
           >
             <FaLinkedin size={20} />
           </a>
+          <a
+            href="https://leetcode.com/u/RihaShehzadi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="footer-link-leetcode"
+            className="hover:text-primary transition-colors"
+          >
+            <SiLeetcode size={20} />
+          </a>
+          <a
+            href="https://www.youtube.com/@codingwithriha"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="footer-link-youtube"
+            className="hover:text-primary transition-colors"
+          >
+            <FaYoutube size={20} />
+          </a>
         </div>
 
         <div className="text-muted-foreground text-sm flex items-center gap-1.5">
-          Made with <FaHeart size={14} className="text-red-500 fill-red-500" /> using React &amp; Tailwind CSS
+          Made with <FaHeart size={14} className="text-red-500 fill-red-500" /> by <a href="https://github.com/codingwithriha" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">codingwithriha</a>
         </div>
 
       </div>
