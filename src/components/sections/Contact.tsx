@@ -81,7 +81,7 @@ export function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
                   <Phone size={24} />
                 </div>
@@ -95,7 +95,7 @@ export function Contact() {
                     +92 322 4316417
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
 
