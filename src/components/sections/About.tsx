@@ -25,16 +25,16 @@ export function About() {
             className="space-y-6 text-muted-foreground text-lg leading-relaxed"
           >
             <p>
-              I'm a detail-oriented and performance-driven MERN Stack Developer
+              I'm a detail oriented and performance driven MERN Stack Developer
               with over 2 years of experience, specializing in building and
               maintaining efficient, scalable, and highly interactive
               applications.
             </p>
             <p>
               Proficient in React.js, Node.js, Express.js, and MongoDB, with
-              hands-on experience in state management using Redux and Context
+              hands on experience in state management using Redux and Context
               API. Skilled in RESTful API design, database design, and version
-              control systems like Git. Passionate about open-source and
+              control systems like Git. Passionate about open source and
               applying emerging technologies to improve scalability and code
               maintainability.
             </p>
@@ -60,7 +60,7 @@ export function About() {
                     Experience
                   </span>
                   <span>
-                    2+ Years — Software Engineer at Onxpress &amp; Miqsol
+                    2+ Years  Software Engineer at Onxpress &amp; Miqsol
                   </span>
                 </div>
               </li>
@@ -73,7 +73,7 @@ export function About() {
                     Education
                   </span>
                   <span>
-                    BS Software Engineering — Virtual University of Pakistan
+                    BS(Software Engineering)  Virtual University of Pakistan
                     (2021–2025)
                   </span>
                 </div>
