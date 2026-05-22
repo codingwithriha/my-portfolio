@@ -9,6 +9,7 @@ import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/layout/Footer";
 import { Toaster } from "./components/ui/toaster";
+import { Experience } from "./components/sections/Experience";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ function App() {
               <Hero />
               <About />
               <Skills />
+              <Experience />
               <Projects />
               <Contact />
             </main>
