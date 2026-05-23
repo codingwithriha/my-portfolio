@@ -5,7 +5,7 @@ A modern, responsive personal portfolio website built to showcase my projects, s
 ---
 
 ## 📌 Live Demo
-https://your-live-portfolio-link.com
+https://riha-shahzadi.vercel.app
 
 ---
 
