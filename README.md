@@ -31,10 +31,10 @@ This portfolio website is designed to present my professional profile, including
 
 - HTML5
 - CSS3
-- JavaScript
-- React.js (if used)
-- Tailwind CSS / Bootstrap (if used)
-- Framer Motion (if used for animations)
+- TypeScript
+- React.js
+- Tailwind CSS
+- Framer Motion
 
 ---
 
