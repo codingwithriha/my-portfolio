@@ -16,10 +16,10 @@ const PROJECTS = [
       "A full-stack doctor appointment booking application enabling patients to schedule, manage, and track appointments with healthcare providers seamlessly.",
     image: doctorImg,
     fallback: "linear-gradient(135deg, #14b8a6, #0f172a)",
-    tags: ["JavaScript", "React", "Node.js", "MongoDB"],
+    tags: ["MERN", "Socket.io", "Node.js", "MongoDB"],
     category: "Full Stack",
     github: "https://github.com/codingwithriha/Doctor-Appointment",
-    demo: "https://github.com/codingwithriha/Doctor-Appointment",
+    demo: "https://doctor-appointment-prescripto-frontend.vercel.app/",
   },
   {
     id: 2,
