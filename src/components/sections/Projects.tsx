@@ -7,10 +7,22 @@ import doctorImg from "../../assets/Doctor.png";
 import blogImg from "../../assets/blog.jpg";
 import smartImg from "../../assets/smart-notes.png";
 import lmsImage from "../../assets/LMS.png";
+import eshopImg from "../../assets/e-shop.png";
 
 const PROJECTS = [
   {
     id: 1,
+    title: "Multi-Vendor E-Commerce (Eshop-MV)",
+    description: "Scalable multi-vendor e-commerce platform with customer, seller, and admin workflows, real-time features, secure authentication, and complete order management.",
+    image: eshopImg,
+    fallback: "linear-gradient(135deg, #ec4899, #0f172a)",
+    tags: ["MERN", "Node.js", "Socket.io", "JWT", "Cloudinary"],
+    category: "Full Stack",
+    github: "https://github.com/codingwithriha/Eshop-MV",
+    demo: "https://eshop-mv.vercel.app/"
+  },
+  {
+    id: 2,
     title: "Doctor Appointment System",
     description:
       "A full-stack doctor appointment booking application enabling patients to schedule, manage, and track appointments with healthcare providers seamlessly.",
@@ -22,7 +34,7 @@ const PROJECTS = [
     demo: "https://doctor-appointment-prescripto-frontend.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "LMS SaaS Platform",
     description:
       "Feature-rich Learning Management System with user authentication, subscriptions, and Stripe payments.",
@@ -34,7 +46,7 @@ const PROJECTS = [
     demo: "https://github.com/codingwithriha/LMS-Saas-Project",
   },
   {
-    id: 3,
+    id: 4,
     title: "Smart Notes App",
     description: "A full-stack Smart Notes Application built with Laravel and Tailwind CSS, featuring advanced note organization with categories, tags, search, soft delete, and public note sharing.",
     image: smartImg,
@@ -45,7 +57,7 @@ const PROJECTS = [
     demo: "https://github.com/Riha-Laiba-Dev-Studio/Smart-NotesApp"
   },
   {
-    id: 4,
+    id: 5,
     title: "Warehouse Management",
     description: "A robust warehouse management system for tracking inventory, managing stock movements, and streamlining operations with an intuitive admin interface.",
     image: "",
@@ -56,7 +68,7 @@ const PROJECTS = [
     demo: "https://github.com/Riha-Laiba-Dev-Studio/Ware-house-management"
   },
   {
-    id: 5,
+    id: 6,
     title: "Blogging Website",
     description: "A full-featured blogging platform built with PHP and MySQL, featuring an admin dashboard for managing posts, comments, and users. Includes search, category filtering, and a responsive Bootstrap UI.",
     image: blogImg,
