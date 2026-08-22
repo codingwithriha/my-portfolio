@@ -40,7 +40,7 @@ const SOCIAL_LINKS = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/riha-shehzadi",
+    href: "https://www.linkedin.com/in/riha-shahzadi",
     icon: FaLinkedin,
     username: "Riha Shahzadi",
     color: "#0a66c2",
@@ -57,14 +57,14 @@ const SOCIAL_LINKS = [
     href: "https://www.youtube.com/@codingwithriha",
     icon: FaYoutube,
     username: "@codingwithriha",
-    color: "#0a66c2",
+    color: "#ff0000",
   },
   {
     label: "Twitter",
     href: "https://twitter.com/rihashehzadi",
     icon: FaTwitter,
     username: "Riha Shehzadi",
-    color: "#0a66c2",
+    color: "#1d9bf0",
   },
   
 ];
