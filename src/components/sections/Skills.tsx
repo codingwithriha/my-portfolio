@@ -2,8 +2,9 @@ import { motion } from "framer-motion";
 import {
   SiReact, SiNextdotjs, SiTailwindcss, SiJavascript, SiTypescript, SiHtml5, SiRedux, SiBootstrap,
   SiNodedotjs, SiExpress, SiMongodb, SiMysql,
-  SiGit, SiDocker, SiPostman, SiVercel
+  SiGit, SiDocker, SiPostgresql, SiPostman, SiVercel
 } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 
 const skillCategories = [
   {
@@ -26,8 +27,8 @@ const skillCategories = [
       { name: "Express.js", icon: SiExpress, color: "#ffffff" },
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
-      { name: "REST APIs", icon: SiNodedotjs, color: "#339933" },
-      { name: "PostgreSQL", icon: SiNextdotjs, color: "#4169E1" },
+      { name: "REST APIs", icon: TbApi, color: "#38bdf8" },      
+      { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
     ]
   },
   {
