@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riha-shahzadi.vercel.app/sitemap.xml
