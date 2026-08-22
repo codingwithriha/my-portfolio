@@ -1,15 +1,15 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { Button } from "../ui/button";
 
 const ROLES = [
-  "MERN Stack Engineer",
-  "React Developer",
-  "Node.js Developer",
-  "OpenSource Contributor",
+  "Full Stack Developer",
+  "MERN Stack Developer",
+  "React.js Developer",
+  "Open Source Contributor",
 ];
-
 export function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
 
@@ -26,8 +26,8 @@ export function Hero() {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Riha Shahzadi - MERN Stack Engineer.pdf";
-    link.download = "Riha Shahzadi - MERN Stack Engineer";
+    link.href = "/riha-shahzadi-resume.pdf";
+    link.download = "Riha Shahzadi-MERN Stack Engineer.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -57,15 +57,18 @@ export function Hero() {
           </h1>
 
           <div className="h-[40px] md:h-[60px] flex items-center">
-            <motion.p
-              key={roleIndex}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              className="text-2xl md:text-3xl text-muted-foreground font-light"
-            >
-              {ROLES[roleIndex]}
-            </motion.p>
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={roleIndex}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
+                className="text-2xl md:text-3xl text-muted-foreground font-light"
+              >
+                {ROLES[roleIndex]}
+              </motion.p>
+            </AnimatePresence>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
@@ -99,6 +102,7 @@ export function Hero() {
               href="https://github.com/codingwithriha"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Riha's GitHub profile"
               data-testid="link-github"
               className="hover:text-primary transition-colors"
             >
@@ -108,6 +112,7 @@ export function Hero() {
               href="https://www.linkedin.com/in/riha-shahzadi"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Riha's LinkedIn profile"
               data-testid="link-linkedin"
               className="hover:text-primary transition-colors"
             >
@@ -117,10 +122,11 @@ export function Hero() {
               href="https://x.com/RihaShehzadi"
               target="_blank"
               rel="noopener noreferrer"
-              data-testid="link-github-org"
+              aria-label="Riha's Twitter profile"
+              data-testid="link-twitter"
               className="hover:text-primary transition-colors"
             >
-              <FaTwitter size={24} />
+              <FaXTwitter size={24} />
             </a>
           </div>
         </motion.div>
