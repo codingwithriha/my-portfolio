@@ -35,7 +35,3 @@ This portfolio website is designed to present my professional profile, including
 - React.js
 - Tailwind CSS
 - Framer Motion
-
----
-
-## 📁 Folder Structure
