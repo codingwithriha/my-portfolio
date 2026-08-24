@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,11 +17,35 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // If we arrive on the home page carrying a "scrollTo" instruction
+  // (set when a nav link was clicked from a different route, like /blog),
+  // scroll to that section once the home page has rendered.
+  useEffect(() => {
+    if (location.pathname === "/" && location.state?.scrollTo) {
+      const id = location.state.scrollTo as string;
+      const timer = setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+        // Clear the state so it doesn't re-trigger on future visits
+        window.history.replaceState({}, "");
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [location]);
+
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+
+    if (location.pathname === "/") {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Navigate home first, then scroll once mounted (handled above)
+      navigate("/", { state: { scrollTo: id } });
     }
   };
 
@@ -28,6 +55,7 @@ export function Navbar() {
     { name: "Skills", id: "skills" },
     { name: "Experience", id: "experience" },
     { name: "Projects", id: "projects" },
+    { name: "Blog", id: "blog" },
     { name: "Contact", id: "contact" },
   ];
 
