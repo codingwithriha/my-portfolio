@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 
 // Your Medium username (the part after the @ in your profile URL)
-export const MEDIUM_USERNAME = "rihashehzadi2003";
+export const MEDIUM_USERNAME = "rihashahzadi";
 export const MEDIUM_PROFILE_URL = `https://medium.com/@${MEDIUM_USERNAME}`;
 
 const RSS_URL = `https://medium.com/feed/@${MEDIUM_USERNAME}`;
