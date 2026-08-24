@@ -1,15 +1,11 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { TooltipProvider } from "./components/ui/tooltip";
-import { Navbar } from "./components/layout/Navbar";
-import { Hero } from "./components/sections/Hero";
-import { About } from "./components/sections/About";
-import { Skills } from "./components/sections/Skills";
-import { Projects } from "./components/sections/Projects";
-import { Contact } from "./components/sections/Contact";
-import { Footer } from "./components/layout/Footer";
 import { Toaster } from "./components/ui/toaster";
-import { Experience } from "./components/sections/Experience";
+import HomePage from "./pages/HomePage";
+import BlogPage from "./pages/BlogPage";
+import NotFound from "./pages/not-found";
 
 const queryClient = new QueryClient();
 
@@ -18,18 +14,13 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <TooltipProvider>
-          <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/30 selection:text-primary">
-            <Navbar />
-            <main>
-              <Hero />
-              <About />
-              <Skills />
-              <Experience />
-              <Projects />
-              <Contact />
-            </main>
-            <Footer />
-          </div>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
           <Toaster />
         </TooltipProvider>
       </ThemeProvider>
