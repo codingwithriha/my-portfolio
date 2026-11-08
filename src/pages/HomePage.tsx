@@ -2,6 +2,7 @@ import { Navbar } from "../components/layout/Navbar";
 import { Hero } from "../components/sections/Hero";
 import { About } from "../components/sections/About";
 import { Approach } from "../components/sections/Approach";
+import { InterfaceStates } from "../components/sections/InterfaceStates";
 import { Skills } from "../components/sections/Skills";
 import { Experience } from "../components/sections/Experience";
 import { Projects } from "../components/sections/Projects";
@@ -17,6 +18,7 @@ export default function HomePage() {
         <Hero />
         <About />
         <Approach />
+        <InterfaceStates />
         <Skills />
         <Experience />
         <Projects />
