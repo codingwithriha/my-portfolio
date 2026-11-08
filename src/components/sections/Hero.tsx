@@ -26,8 +26,8 @@ export function Hero() {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/riha-shahzadi-resume.pdf";
-    link.download = "Riha Shahzadi | MERN Developer.pdf";
+    link.href = "/Riha Shahzadi-MERN Stack Engineer.pdf";
+    link.download = "Riha Shahzadi-MERN Stack Engineer.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
