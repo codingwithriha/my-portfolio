@@ -14,10 +14,9 @@ function updateThemeFavicon(theme: Theme) {
     favicon.type = "image/svg+xml";
     favicon.href = `data:image/svg+xml,${encodeURIComponent(svg)}`;
   }
-  document.querySelector<HTMLMetaElement>('meta[name="theme-color"]')?.setAttribute(
-    "content",
-    theme === "dark" ? "#14231C" : "#285B48",
-  );
+  document
+    .querySelector<HTMLMetaElement>('meta[name="theme-color"]')
+    ?.setAttribute("content", theme === "dark" ? "#14231C" : "#285B48");
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
