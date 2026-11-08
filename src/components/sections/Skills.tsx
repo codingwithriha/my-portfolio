@@ -53,11 +53,13 @@ export function Skills() {
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
+          <p className="section-kicker mb-3">Tools I work with</p>
+          <h2 className="section-heading mb-4">A practical <span className="text-primary">engineering toolkit.</span></h2>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <p className="text-muted-foreground max-w-2xl -mt-8 mb-12">The technologies I use to shape interfaces, build application logic and ship maintainable web products.</p>
+        <div className="grid lg:grid-cols-3 gap-8">
           {skillCategories.map((category, catIndex) => (
             <motion.div
               key={category.title}
