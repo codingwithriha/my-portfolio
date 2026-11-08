@@ -5,7 +5,6 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card/50 py-12">
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
-
         <div className="text-muted-foreground text-sm text-center md:text-left">
           © {new Date().getFullYear()} Riha Shahzadi. All rights reserved.
         </div>
@@ -59,9 +58,17 @@ export function Footer() {
         </div>
 
         <div className="text-muted-foreground text-sm flex items-center gap-1.5">
-          Made with <FaHeart size={14} className="text-red-500 fill-red-500" /> by <a href="https://github.com/codingwithriha" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">codingwithriha</a>
+          Made with <FaHeart size={14} className="text-red-500 fill-red-500" />{" "}
+          by{" "}
+          <a
+            href="https://github.com/codingwithriha"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors"
+          >
+            codingwithriha
+          </a>
         </div>
-
       </div>
     </footer>
   );

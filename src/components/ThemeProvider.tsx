@@ -8,7 +8,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
     const saved = localStorage.getItem("portfolio-theme");
     if (saved === "light" || saved === "dark") return saved;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
   });
 
   useEffect(() => {
@@ -17,9 +19,14 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem("portfolio-theme", theme);
   }, [theme]);
 
-  const toggleTheme = () => setTheme((current) => current === "dark" ? "light" : "dark");
+  const toggleTheme = () =>
+    setTheme((current) => (current === "dark" ? "light" : "dark"));
 
-  return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 }
 
 export function useTheme() {

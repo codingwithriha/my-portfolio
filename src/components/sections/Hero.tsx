@@ -72,7 +72,9 @@ export function Hero() {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            I build thoughtful web products from interface to API — combining React, TypeScript and Node.js to turn complex workflows into clear, reliable experiences.
+            I build thoughtful web products from interface to API — combining
+            React, TypeScript and Node.js to turn complex workflows into clear,
+            reliable experiences.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">

@@ -34,8 +34,8 @@ export function Blog() {
             </h2>
             <div className="w-20 h-1 bg-primary rounded-full mb-4"></div>
             <p className="text-muted-foreground max-w-xl">
-              I write about MERN stack architecture, React patterns, and
-              things I learn while building. Read more on Medium.
+              I write about MERN stack architecture, React patterns, and things
+              I learn while building. Read more on Medium.
             </p>
           </div>
 

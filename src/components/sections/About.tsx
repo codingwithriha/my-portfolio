@@ -25,10 +25,17 @@ export function About() {
             className="space-y-6 text-muted-foreground text-lg leading-relaxed"
           >
             <p>
-              I came into software through product design, so I naturally think about both the person using a product and the system supporting it. That perspective still shapes the way I approach every feature: make it clear, make it useful, and make it work reliably.
+              I came into software through product design, so I naturally think
+              about both the person using a product and the system supporting
+              it. That perspective still shapes the way I approach every
+              feature: make it clear, make it useful, and make it work reliably.
             </p>
             <p>
-              Today, I work across the frontend and backend with React, TypeScript, Next.js and the MERN stack. I enjoy turning requirements into thoughtful interfaces, connecting them to APIs and handling the practical details — data, validation, permissions and edge cases — that make an application dependable.
+              Today, I work across the frontend and backend with React,
+              TypeScript, Next.js and the MERN stack. I enjoy turning
+              requirements into thoughtful interfaces, connecting them to APIs
+              and handling the practical details — data, validation, permissions
+              and edge cases — that make an application dependable.
             </p>
 
             <ul className="space-y-4 pt-4">
@@ -65,7 +72,7 @@ export function About() {
                     Education
                   </span>
                   <span>
-                    BS(Software Engineering)  Virtual University of Pakistan
+                    BS(Software Engineering) Virtual University of Pakistan
                     (2021–2025)
                   </span>
                 </div>
@@ -85,8 +92,12 @@ export function About() {
             </div>
 
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-xl">
-              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Approach</p>
-              <p className="text-lg font-semibold text-primary">Build with purpose.</p>
+              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">
+                Approach
+              </p>
+              <p className="text-lg font-semibold text-primary">
+                Build with purpose.
+              </p>
             </div>
 
             <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-6 shadow-xl flex items-center gap-4">
