@@ -38,7 +38,6 @@ const PROJECTS = [
     description: "A property listing application where people can explore homes, narrow results with search and filters, publish listings and contact the person responsible for a property.",
     contribution: "Authentication · listing management · search and filtering · image uploads · responsive property detail pages",
     stack: ["React", "Redux Toolkit", "Node.js", "MongoDB", "Firebase", "Cloudinary"],
-    image: eshopImg,
     tone: "from-emerald-500/20 via-lime-400/10 to-transparent",
     github: "https://github.com/codingwithriha/MERN-Estate",
     demo: "https://estate-hubclient.vercel.app/",
