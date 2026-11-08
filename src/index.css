@@ -356,3 +356,37 @@ a.project-icon-link:hover { color: hsl(var(--primary)); border-color: hsl(var(--
 .theme-toggle { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 999px; border: 1px solid hsl(var(--border)); color: hsl(var(--foreground)); transition: .2s ease; }
 .theme-toggle:hover { color: hsl(var(--primary)); border-color: hsl(var(--primary) / .6); background: hsl(var(--primary) / .08); }
 @media (max-width: 640px) { .project-visual { height: 190px; } }
+
+/* Compact, editorial project cards */
+.project-visual-compact { height: 148px; }
+.project-card { border-radius: 1rem; }
+.project-description { min-height: 4.5rem; }
+.project-card .p-5 { padding: 1.15rem; }
+.project-card .tech-chip { padding: .28rem .52rem; font-size: .62rem; }
+.approach-card {
+  min-height: 220px;
+  padding: 1.5rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  background: hsl(var(--card));
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.approach-card:hover {
+  transform: translateY(-3px);
+  border-color: hsl(var(--primary) / .45);
+  box-shadow: 0 18px 45px -34px hsl(var(--foreground) / .3);
+}
+.approach-icon {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: .85rem;
+  color: hsl(var(--primary));
+  background: hsl(var(--primary) / .1);
+}
+@media (max-width: 640px) {
+  .project-visual-compact { height: 132px; }
+  .project-description { min-height: 0; }
+  .approach-card { min-height: 0; }
+}
