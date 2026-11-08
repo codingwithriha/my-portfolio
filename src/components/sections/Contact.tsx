@@ -66,7 +66,6 @@ const SOCIAL_LINKS = [
     username: "Riha Shehzadi",
     color: "#1d9bf0",
   },
-  
 ];
 
 export function Contact() {
@@ -84,7 +83,9 @@ export function Contact() {
           className="mb-16"
         >
           <p className="section-kicker mb-3">Start a conversation</p>
-          <h2 className="section-heading mb-4">Have a good problem to solve?</h2>
+          <h2 className="section-heading mb-4">
+            Have a good problem to solve?
+          </h2>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
         </motion.div>
 
@@ -101,7 +102,10 @@ export function Contact() {
             <span className="text-primary">great together.</span>
           </h3>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            I'm open to remote opportunities, full-time roles and thoughtful technical collaborations. If you're building a product and need an engineer who cares about both the details and the bigger picture, I'd be glad to talk.
+            I'm open to remote opportunities, full-time roles and thoughtful
+            technical collaborations. If you're building a product and need an
+            engineer who cares about both the details and the bigger picture,
+            I'd be glad to talk.
           </p>
           <a
             href="mailto:rihashehzadi2003@gmail.com"
@@ -141,7 +145,9 @@ export function Contact() {
                 <p className="text-foreground font-semibold text-base mb-1 break-all group-hover:text-primary transition-colors">
                   {card.value}
                 </p>
-                <p className="text-muted-foreground text-sm">{card.description}</p>
+                <p className="text-muted-foreground text-sm">
+                  {card.description}
+                </p>
               </motion.a>
             );
           })}
@@ -170,14 +176,22 @@ export function Contact() {
                   data-testid={`link-social-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                   className="group flex items-center gap-3 bg-background/60 border border-border hover:border-primary/40 rounded-xl px-5 py-3.5 transition-all hover:shadow-md"
                 >
-                  <Icon size={20} className="text-muted-foreground group-hover:text-primary transition-colors" />
+                  <Icon
+                    size={20}
+                    className="text-muted-foreground group-hover:text-primary transition-colors"
+                  />
                   <div>
-                    <p className="text-xs text-muted-foreground leading-none mb-1">{link.label}</p>
+                    <p className="text-xs text-muted-foreground leading-none mb-1">
+                      {link.label}
+                    </p>
                     <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
                       {link.username}
                     </p>
                   </div>
-                  <ExternalLink size={14} className="ml-auto text-muted-foreground/50 group-hover:text-primary transition-colors" />
+                  <ExternalLink
+                    size={14}
+                    className="ml-auto text-muted-foreground/50 group-hover:text-primary transition-colors"
+                  />
                 </a>
               );
             })}

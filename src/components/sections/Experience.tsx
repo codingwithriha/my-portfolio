@@ -62,7 +62,10 @@ export function Experience() {
           className="mb-16"
         >
           <p className="section-kicker mb-3">The path so far</p>
-          <h2 className="section-heading mb-4">Experience shaped by <span className="text-primary">product work.</span></h2>
+          <h2 className="section-heading mb-4">
+            Experience shaped by{" "}
+            <span className="text-primary">product work.</span>
+          </h2>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
         </motion.div>
 
@@ -83,12 +86,12 @@ export function Experience() {
                   className={`relative flex flex-col md:flex-row ${isEven ? "md:flex-row" : "md:flex-row-reverse"} gap-8 md:gap-0`}
                 >
                   {/* Timeline dot */}
-                  <div
-                    className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full border-2 border-primary bg-background -translate-x-1/2 top-6 z-10 shadow-[0_0_12px_rgba(20,184,166,0.4)]"
-                  />
+                  <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full border-2 border-primary bg-background -translate-x-1/2 top-6 z-10 shadow-[0_0_12px_rgba(20,184,166,0.4)]" />
 
                   {/* Card */}
-                  <div className={`ml-12 md:ml-0 md:w-[45%] ${isEven ? "md:mr-auto md:pr-10" : "md:ml-auto md:pl-10"}`}>
+                  <div
+                    className={`ml-12 md:ml-0 md:w-[45%] ${isEven ? "md:mr-auto md:pr-10" : "md:ml-auto md:pl-10"}`}
+                  >
                     <div
                       data-testid={`card-experience-${exp.id}`}
                       className={`relative bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all bg-gradient-to-br ${exp.color}`}
@@ -96,8 +99,12 @@ export function Experience() {
                       {/* Header */}
                       <div className="flex items-start justify-between gap-4 mb-4">
                         <div>
-                          <h3 className="text-lg font-bold text-foreground">{exp.role}</h3>
-                          <p className="text-primary font-semibold mt-0.5">{exp.company}</p>
+                          <h3 className="text-lg font-bold text-foreground">
+                            {exp.role}
+                          </h3>
+                          <p className="text-primary font-semibold mt-0.5">
+                            {exp.company}
+                          </p>
                         </div>
                         <span className="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary font-medium shrink-0">
                           {exp.type}
@@ -119,7 +126,10 @@ export function Experience() {
                       {/* Highlights */}
                       <ul className="space-y-2">
                         {exp.highlights.map((point, i) => (
-                          <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed">
+                          <li
+                            key={i}
+                            className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed"
+                          >
                             <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                             {point}
                           </li>

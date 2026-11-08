@@ -26,8 +26,8 @@ export function Hero() {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/riha-shahzadi-resume.pdf";
-    link.download = "Riha Shahzadi | MERN Developer.pdf";
+    link.href = "/Riha Shahzadi-MERN Stack Engineer.pdf";
+    link.download = "Riha Shahzadi-MERN Stack Engineer.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -72,7 +72,9 @@ export function Hero() {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            I build thoughtful web products from interface to API — combining React, TypeScript and Node.js to turn complex workflows into clear, reliable experiences.
+            I build thoughtful web products from interface to API - combining
+            React, TypeScript and Node.js to turn complex workflows into clear,
+            reliable experiences.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">

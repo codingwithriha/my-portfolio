@@ -1,8 +1,22 @@
 import { motion } from "framer-motion";
 import {
-  SiReact, SiNextdotjs, SiTailwindcss, SiJavascript, SiTypescript, SiHtml5, SiRedux, SiBootstrap,
-  SiNodedotjs, SiExpress, SiMongodb, SiMysql,
-  SiGit, SiDocker, SiPostgresql, SiPostman, SiVercel
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiJavascript,
+  SiTypescript,
+  SiHtml5,
+  SiRedux,
+  SiBootstrap,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiGit,
+  SiDocker,
+  SiPostgresql,
+  SiPostman,
+  SiVercel,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -18,7 +32,7 @@ const skillCategories = [
       { name: "Redux", icon: SiRedux, color: "#764ABC" },
       { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
       { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
-    ]
+    ],
   },
   {
     title: "Backend",
@@ -27,9 +41,9 @@ const skillCategories = [
       { name: "Express.js", icon: SiExpress, color: "#ffffff" },
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
-      { name: "REST APIs", icon: TbApi, color: "#38bdf8" },      
+      { name: "REST APIs", icon: TbApi, color: "#38bdf8" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
-    ]
+    ],
   },
   {
     title: "Tools & DevOps",
@@ -38,8 +52,8 @@ const skillCategories = [
       { name: "Docker", icon: SiDocker, color: "#2496ED" },
       { name: "Postman", icon: SiPostman, color: "#FF6C37" },
       { name: "Vercel", icon: SiVercel, color: "#ffffff" },
-    ]
-  }
+    ],
+  },
 ];
 
 export function Skills() {
@@ -54,11 +68,17 @@ export function Skills() {
           className="mb-16"
         >
           <p className="section-kicker mb-3">Tools I work with</p>
-          <h2 className="section-heading mb-4">A practical <span className="text-primary">engineering toolkit.</span></h2>
+          <h2 className="section-heading mb-4">
+            A practical{" "}
+            <span className="text-primary">engineering toolkit.</span>
+          </h2>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
         </motion.div>
 
-        <p className="text-muted-foreground max-w-2xl -mt-8 mb-12">The technologies I use to shape interfaces, build application logic and ship maintainable web products.</p>
+        <p className="text-muted-foreground max-w-2xl -mt-8 mb-12">
+          The technologies I use to shape interfaces, build application logic
+          and ship maintainable web products.
+        </p>
         <div className="grid lg:grid-cols-3 gap-8">
           {skillCategories.map((category, catIndex) => (
             <motion.div
