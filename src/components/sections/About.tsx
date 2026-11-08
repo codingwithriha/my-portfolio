@@ -84,13 +84,9 @@ export function About() {
               <Code2 size={120} className="text-primary/40" />
             </div>
 
-            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-xl flex items-center gap-4">
-              <div className="text-4xl font-bold text-primary">230+</div>
-              <div className="text-sm text-muted-foreground font-medium uppercase tracking-wider leading-tight">
-                LeetCode
-                <br />
-                Challenges
-              </div>
+            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-xl">
+              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Approach</p>
+              <p className="text-lg font-semibold text-primary">Build with purpose.</p>
             </div>
 
             <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-6 shadow-xl flex items-center gap-4">
