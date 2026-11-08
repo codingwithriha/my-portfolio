@@ -25,10 +25,10 @@ export function About() {
             className="space-y-6 text-muted-foreground text-lg leading-relaxed"
           >
             <p>
-              I'm a software engineer focused on building web applications that are useful, dependable and easy to work with. My experience spans product interfaces, backend services and the details that connect the two.
+              I came into software through product design, so I naturally think about both the person using a product and the system supporting it. That perspective still shapes the way I approach every feature: make it clear, make it useful, and make it work reliably.
             </p>
             <p>
-              I work mainly with React, TypeScript, Next.js and the MERN stack. I enjoy shaping clear user journeys, building reusable frontend systems, connecting APIs and modelling data so features remain maintainable as products grow.
+              Today, I work across the frontend and backend with React, TypeScript, Next.js and the MERN stack. I enjoy turning requirements into thoughtful interfaces, connecting them to APIs and handling the practical details — data, validation, permissions and edge cases — that make an application dependable.
             </p>
 
             <ul className="space-y-4 pt-4">
