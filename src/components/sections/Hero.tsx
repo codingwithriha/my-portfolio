@@ -8,7 +8,7 @@ const ROLES = [
   "Full Stack Developer",
   "MERN Stack Developer",
   "React.js Developer",
-  "Open Source Contributor",
+  "Frontend & Full-Stack Engineer",
 ];
 export function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -72,9 +72,7 @@ export function Hero() {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Detail-oriented MERN Stack Developer with 2+ years of experience
-            building scalable, high-performance web applications. Passionate
-            about clean code, great UX, and open-source contribution.
+            I build thoughtful web products from interface to API — combining React, TypeScript and Node.js to turn complex workflows into clear, reliable experiences.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -158,8 +156,8 @@ export function Hero() {
               </p>
               <p className="pl-4">skills: ['React', 'Node.js', 'Next.js'],</p>
               <p className="pl-4">
-                leetcode: <span className="text-orange-400">230</span>+
-                challenges,
+                focus: <span className="text-orange-400">product</span>
+                thinking,
               </p>
               <p className="pl-4">
                 buildAwesomeApps:{" "}

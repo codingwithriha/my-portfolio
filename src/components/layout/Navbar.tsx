@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "../ThemeProvider";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export function Navbar() {
+  const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -91,6 +93,10 @@ export function Navbar() {
           ))}
         </div>
 
+        <div className="flex items-center gap-2">
+        <button onClick={toggleTheme} aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"} className="theme-toggle">
+          {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+        </button>
         <button
           data-testid="button-mobile-menu"
           className="md:hidden text-foreground p-2"
@@ -98,6 +104,7 @@ export function Navbar() {
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
+        </div>
       </div>
 
       <AnimatePresence>

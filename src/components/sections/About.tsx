@@ -25,18 +25,10 @@ export function About() {
             className="space-y-6 text-muted-foreground text-lg leading-relaxed"
           >
             <p>
-              I'm a detail oriented and performance driven MERN Stack Developer
-              with over 2 years of experience, specializing in building and
-              maintaining efficient, scalable, and highly interactive
-              applications.
+              I came into software through product design, so I naturally think about both the person using a product and the system supporting it. That perspective still shapes the way I approach every feature: make it clear, make it useful, and make it work reliably.
             </p>
             <p>
-              Proficient in React.js, Node.js, Express.js, and MongoDB, with
-              hands on experience in state management using Redux and Context
-              API. Skilled in RESTful API design, database design, and version
-              control systems like Git. Passionate about open source and
-              applying emerging technologies to improve scalability and code
-              maintainability.
+              Today, I work across the frontend and backend with React, TypeScript, Next.js and the MERN stack. I enjoy turning requirements into thoughtful interfaces, connecting them to APIs and handling the practical details — data, validation, permissions and edge cases — that make an application dependable.
             </p>
 
             <ul className="space-y-4 pt-4">
@@ -60,7 +52,7 @@ export function About() {
                     Experience
                   </span>
                   <span>
-                    2+ Years  Software Engineer at Onxpress &amp; Miqsol
+                    2+ years across software engineering and product design
                   </span>
                 </div>
               </li>
@@ -92,13 +84,9 @@ export function About() {
               <Code2 size={120} className="text-primary/40" />
             </div>
 
-            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-xl flex items-center gap-4">
-              <div className="text-4xl font-bold text-primary">230+</div>
-              <div className="text-sm text-muted-foreground font-medium uppercase tracking-wider leading-tight">
-                LeetCode
-                <br />
-                Challenges
-              </div>
+            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-xl">
+              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Approach</p>
+              <p className="text-lg font-semibold text-primary">Build with purpose.</p>
             </div>
 
             <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-6 shadow-xl flex items-center gap-4">
