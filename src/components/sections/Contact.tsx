@@ -83,7 +83,8 @@ export function Contact() {
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+          <p className="section-kicker mb-3">Start a conversation</p>
+          <h2 className="section-heading mb-4">Have a good problem to solve?</h2>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
         </motion.div>
 
@@ -100,9 +101,7 @@ export function Contact() {
             <span className="text-primary">great together.</span>
           </h3>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            I'm currently open to new opportunities  freelance projects, full-time roles, 
-            or technical collaborations. If you have an idea you'd like to bring to life, 
-            I'd love to hear from you.
+            I'm open to remote opportunities, full-time roles and thoughtful technical collaborations. If you're building a product and need an engineer who cares about both the details and the bigger picture, I'd be glad to talk.
           </p>
           <a
             href="mailto:rihashehzadi2003@gmail.com"
