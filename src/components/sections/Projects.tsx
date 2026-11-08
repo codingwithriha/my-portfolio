@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, LockKeyhole } from "lucide-react";
+import { ArrowUpRight, Code2, LockKeyhole } from "lucide-react";
 import eshopImg from "../../assets/e-shop.png";
 import doctorImg from "../../assets/Doctor.png";
 import lmsImage from "../../assets/LMS.png";
@@ -116,7 +116,7 @@ export function Projects() {
                     <h3 className="text-2xl font-semibold tracking-tight">{project.title}</h3>
                   </div>
                   {project.github ? (
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} source on GitHub`} className="project-icon-link"><Github size={19} /></a>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} source on GitHub`} className="project-icon-link"><Code2 size={19} /></a>
                   ) : (
                     <span className="project-icon-link" title="Private client work"><LockKeyhole size={18} /></span>
                   )}
