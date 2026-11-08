@@ -6,7 +6,7 @@ const strengths = [
     icon: Palette,
     number: "01",
     title: "Design-aware engineering",
-    text: "My product design experience helps me think beyond components — hierarchy, clarity and the small interactions that make an interface feel considered.",
+    text: "My product design experience helps me think beyond components hierarchy, clarity and the small interactions that make an interface feel considered.",
   },
   {
     icon: Workflow,
@@ -18,7 +18,7 @@ const strengths = [
     icon: Layers3,
     number: "03",
     title: "Practical product thinking",
-    text: "I pay attention to real workflows, permissions, validation and edge cases — not just the happy path shown in a design.",
+    text: "I pay attention to real workflows, permissions, validation and edge cases not just the happy path shown in a design.",
   },
 ];
 

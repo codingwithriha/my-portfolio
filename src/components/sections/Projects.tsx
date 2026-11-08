@@ -3,6 +3,8 @@ import { ArrowUpRight, Code2, LockKeyhole } from "lucide-react";
 import eshopImg from "../../assets/e-shop.png";
 import doctorImg from "../../assets/Doctor.png";
 import lmsImage from "../../assets/LMS.png";
+import estateImg from "../../assets/estate.png";
+import DIInvoicingImg from "../../assets/DI.jpeg";
 
 const PROJECTS = [
   {
@@ -42,6 +44,7 @@ const PROJECTS = [
     contribution:
       "Authentication, listing CRUD, search and filters, Firebase sign-in and Cloudinary image uploads.",
     stack: ["React", "Redux", "Node.js", "MongoDB", "Cloudinary"],
+    image: estateImg,
     github: "https://github.com/codingwithriha/MERN-Estate",
     demo: "https://estate-hubclient.vercel.app/",
     access: "Public repository",
@@ -69,6 +72,7 @@ const PROJECTS = [
     contribution:
       "Invoice lifecycle, validation workflows, backend APIs and integration status handling.",
     stack: ["React", "TypeScript", "Node.js", "MongoDB", "FBR / PRAL"],
+    image: DIInvoicingImg,
     access: "Private client project",
   },
   {

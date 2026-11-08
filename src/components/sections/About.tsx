@@ -34,8 +34,8 @@ export function About() {
               Today, I work across the frontend and backend with React,
               TypeScript, Next.js and the MERN stack. I enjoy turning
               requirements into thoughtful interfaces, connecting them to APIs
-              and handling the practical details — data, validation, permissions
-              and edge cases — that make an application dependable.
+              and handling the practical details data, validation, permissions
+              and edge cases that make an application dependable.
             </p>
 
             <ul className="space-y-4 pt-4">

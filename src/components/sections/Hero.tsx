@@ -72,7 +72,7 @@ export function Hero() {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            I build thoughtful web products from interface to API — combining
+            I build thoughtful web products from interface to API - combining
             React, TypeScript and Node.js to turn complex workflows into clear,
             reliable experiences.
           </p>
