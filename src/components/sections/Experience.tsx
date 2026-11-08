@@ -61,7 +61,8 @@ export function Experience() {
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
+          <p className="section-kicker mb-3">The path so far</p>
+          <h2 className="section-heading mb-4">Experience shaped by <span className="text-primary">product work.</span></h2>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
         </motion.div>
 
